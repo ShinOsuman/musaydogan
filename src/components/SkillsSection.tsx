@@ -4,20 +4,26 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Code2, Wrench, Star } from "lucide-react";
 
 const skillsGroups = [
+    {
+    category: "Backend",
+    icon: Code2,
+    skills: ["Java", "C#", "Spring Boot", "ASP.NET", "MySQL", "Entity Framework", "JWT Authentication", "Role-Based Access Control", "REST APIs"],
+    },
+
   {
     category: "Frontend",
     icon: Code2,
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+    skills: ["React", "Vue.js", "Angular", "TypeScript", "HTML", "CSS", "Bootstrap", "Tailwind CSS", "Pinia", "REST APIs"],
   },
   {
     category: "Tools",
     icon: Wrench,
-    skills: ["Git", "Figma", "VS Code", "Vercel"],
+    skills: ["Git", "Figma", "VS Code", "Vercel", "Postman"],
   },
   {
     category: "Other",
     icon: Star,
-    skills: ["SEO", "Performance", "UX/UI", "Web Design"],
+    skills: ["Object-Oriented Design", "REST APIs", "Agile Methodologies", "Unit Testing", "Problem Solving", "Team Collaboration", "Communication", "Adaptability"],
   },
 ];
 
