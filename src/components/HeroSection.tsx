@@ -39,13 +39,13 @@ export default function HeroSection() {
         {/* Photo Section */}
         <div className="flex justify-center animate-slideInRight">
           <div className="relative w-full max-w-sm animate-float">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl blur-2xl opacity-30 animate-pulse-glow"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full blur-2xl opacity-30 animate-pulse-glow"></div>
             <Image
-              src="/photo.jpg"
+              src="/photo.png"
               alt="Profile"
               width={500}
               height={500}
-              className="relative w-full h-auto rounded-2xl shadow-2xl object-cover border-4 border-white dark:border-slate-800 transition-transform hover:scale-105 duration-500"
+              className="relative w-full h-auto aspect-square rounded-full shadow-2xl object-cover border-4 border-white dark:border-slate-800 transition-transform hover:scale-105 duration-500"
             />
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full opacity-20 blur-xl animate-pulse"></div>
             <p className="text-center mt-4 text-lg font-semibold text-slate-800 dark:text-slate-200">
