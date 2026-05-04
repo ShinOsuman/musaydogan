@@ -9,7 +9,7 @@ export default function ContactSection() {
     <section
       ref={ref as React.RefObject<HTMLElement>}
       id="contact"
-      className={`max-w-4xl mx-auto px-6 py-20 border-t border-blue-200 dark:border-blue-800 transition-all duration-1000 ${
+      className={`max-w-4xl mx-auto px-6 py-20 border-t border-emerald-200 dark:border-emerald-800 transition-all duration-1000 ${
         isVisible ? "opacity-100" : "opacity-0 translate-y-10"
       }`}
     >
@@ -24,7 +24,7 @@ export default function ContactSection() {
         <div className="flex gap-4 flex-wrap">
           <a
             href="mailto:mus.aydogan@outlook.com"
-            className="px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-blue-500/50 transition transform hover:-translate-y-0.5 hover:scale-105 duration-300 inline-flex items-center gap-2 group"
+            className="px-6 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-emerald-500/50 transition transform hover:-translate-y-0.5 hover:scale-105 duration-300 inline-flex items-center gap-2 group"
           >
             <Mail size={20} className="group-hover:animate-bounce" />
             Email
@@ -33,14 +33,14 @@ export default function ContactSection() {
             href="https://linkedin.com/in/musaydogan"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 rounded-lg font-medium hover:bg-blue-50 dark:hover:bg-blue-950 transition transform hover:-translate-y-0.5 hover:scale-105 duration-300 inline-flex items-center gap-2 group"
+            className="px-6 py-3 border-2 border-emerald-600 text-emerald-600 dark:border-emerald-400 dark:text-emerald-400 rounded-lg font-medium hover:bg-emerald-50 dark:hover:bg-emerald-950 transition transform hover:-translate-y-0.5 hover:scale-105 duration-300 inline-flex items-center gap-2 group"
           >
             <Share2 size={20} className="group-hover:animate-bounce" />
             LinkedIn
           </a>
           <a
             href="tel:+32487351571"
-            className="px-6 py-3 border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 rounded-lg font-medium hover:bg-blue-50 dark:hover:bg-blue-950 transition transform hover:-translate-y-0.5 hover:scale-105 duration-300 inline-flex items-center gap-2 group"
+            className="px-6 py-3 border-2 border-emerald-600 text-emerald-600 dark:border-emerald-400 dark:text-emerald-400 rounded-lg font-medium hover:bg-emerald-50 dark:hover:bg-emerald-950 transition transform hover:-translate-y-0.5 hover:scale-105 duration-300 inline-flex items-center gap-2 group"
           >
             <Phone size={20} className="group-hover:animate-bounce" />
             +32 487 35 15 71
@@ -49,7 +49,7 @@ export default function ContactSection() {
             href="https://github.com/ShinOsuman"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 rounded-lg font-medium hover:bg-blue-50 dark:hover:bg-blue-950 transition transform hover:-translate-y-0.5 hover:scale-105 duration-300 inline-flex items-center gap-2 group"
+            className="px-6 py-3 border-2 border-emerald-600 text-emerald-600 dark:border-emerald-400 dark:text-emerald-400 rounded-lg font-medium hover:bg-emerald-50 dark:hover:bg-emerald-950 transition transform hover:-translate-y-0.5 hover:scale-105 duration-300 inline-flex items-center gap-2 group"
           >
             <Code2 size={20} className="group-hover:animate-bounce" />
             GitHub

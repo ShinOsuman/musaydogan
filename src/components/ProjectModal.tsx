@@ -31,9 +31,9 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header avec bouton fermer */}
-        <div className="sticky top-0 flex items-center justify-between p-6 border-b border-blue-200 dark:border-blue-800 bg-white dark:bg-slate-900">
+        <div className="sticky top-0 flex items-center justify-between p-6 border-b border-emerald-200 dark:border-emerald-800 bg-white dark:bg-slate-900">
           <div className="flex items-center gap-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-lg flex items-center justify-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex items-center justify-center">
               <Icon size={32} className="text-white" />
             </div>
             <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50">
@@ -69,7 +69,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               {project.stack.map((tech, i) => (
                 <span
                   key={i}
-                  className="px-4 py-2 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 font-medium rounded-full hover:bg-blue-200 dark:hover:bg-blue-800 transition"
+                  className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 font-medium rounded-full hover:bg-emerald-200 dark:hover:bg-emerald-800 transition"
                 >
                   {tech}
                 </span>
@@ -88,7 +88,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   key={i}
                   className="flex items-center gap-2 text-slate-600 dark:text-slate-300"
                 >
-                  <span className="text-blue-600 dark:text-blue-400 font-bold">
+                  <span className="text-emerald-600 dark:text-emerald-400 font-bold">
                     ✓
                   </span>
                   {feature}

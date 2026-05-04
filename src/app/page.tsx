@@ -8,7 +8,7 @@ import ScrollIndicator from "@/components/ScrollIndicator";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-950 dark:via-blue-950 dark:to-indigo-950 text-slate-900 dark:text-slate-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-emerald-50 to-teal-50 dark:from-slate-950 dark:via-emerald-950 dark:to-teal-950 text-slate-900 dark:text-slate-50">
       <Navigation />
       <HeroSection />
       <ProjectsSection />

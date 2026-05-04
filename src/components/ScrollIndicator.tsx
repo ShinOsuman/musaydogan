@@ -28,7 +28,14 @@ export default function ScrollIndicator() {
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
     >
-      <ChevronDown size={32} className="text-blue-600 dark:text-blue-400" />
+      <div className="relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-full blur-lg opacity-75"></div>
+        <ChevronDown
+          size={48}
+          className="relative text-emerald-600 dark:text-emerald-400 drop-shadow-lg font-bold"
+          strokeWidth={3}
+        />
+      </div>
     </div>
   );
 }

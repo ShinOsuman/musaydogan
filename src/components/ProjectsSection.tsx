@@ -52,25 +52,54 @@ const projects = [
   },
   {
     title: "MyPoll – Poll Management Application",
-    description: "Academic project focused on designing and implementing a poll management system with participants, votes, comments, and business rules around simple and multiple-choice polls.",
+    description:
+      "Academic project focused on designing and implementing a poll management system with participants, votes, comments, and business rules around simple and multiple-choice polls.",
     icon: Activity,
     stack: ["C#", "Entity Framework", "SQL Server", "LINQ"],
-    features: ["Built the class model from a functional specification", "Implemented the database schema with Entity Framework", "Tested the model with seed data and multi-entity LINQ queries"],
+    features: [
+      "Built the class model from a functional specification",
+      "Implemented the database schema with Entity Framework",
+      "Tested the model with seed data and multi-entity LINQ queries",
+    ],
   },
   {
     title: "Farming Game – Grid-Based Desktop Application",
-    description: "Academic project focused on the design and implementation of a small farming game prototype with player movement, tile interactions, and an extensible game board model.",
+    description:
+      "Academic project focused on the design and implementation of a small farming game prototype with player movement, tile interactions, and an extensible game board model.",
     icon: Joystick,
-    stack: ["Java", "JavaFX", "MVVM", "Object-Oriented Design", "Event Handling"],
-    features: ["Designed an extensible model for grid cells and game elements", "Implemented player movement and tile interaction logic", "Handled keyboard and mouse events for real-time gameplay"],
+    stack: [
+      "Java",
+      "JavaFX",
+      "MVVM",
+      "Object-Oriented Design",
+      "Event Handling",
+    ],
+    features: [
+      "Designed an extensible model for grid cells and game elements",
+      "Implemented player movement and tile interaction logic",
+      "Handled keyboard and mouse events for real-time gameplay",
+    ],
   },
   {
     title: "Tricount-like – Expense Sharing Web Application",
-    description: "Responsive web application inspired by Tricount, allowing users to manage shared expenses, participants, and balances with complex business rules and weighted expense distribution.",
+    description:
+      "Responsive web application inspired by Tricount, allowing users to manage shared expenses, participants, and balances with complex business rules and weighted expense distribution.",
     icon: Euro,
-    stack: ["PHP", "Javascript", "HTML", "Bootstrap", "MySQL", "MVC Architecture"],
-    features: ["User registration and authentication", "Expense management with support for multiple participants", "Balance calculation with weighted expense distribution", "Responsive design for mobile and desktop"],
-  }
+    stack: [
+      "PHP",
+      "Javascript",
+      "HTML",
+      "Bootstrap",
+      "MySQL",
+      "MVC Architecture",
+    ],
+    features: [
+      "User registration and authentication",
+      "Expense management with support for multiple participants",
+      "Balance calculation with weighted expense distribution",
+      "Responsive design for mobile and desktop",
+    ],
+  },
 ];
 
 export default function ProjectsSection() {
@@ -82,7 +111,7 @@ export default function ProjectsSection() {
     <section
       ref={ref as React.RefObject<HTMLElement>}
       id="projects"
-      className={`max-w-4xl mx-auto px-6 py-20 border-t border-blue-200 dark:border-blue-800 transition-all duration-1000 ${
+      className={`max-w-4xl mx-auto px-6 py-20 border-t border-emerald-200 dark:border-emerald-800 transition-all duration-1000 ${
         isVisible ? "opacity-100" : "opacity-0 translate-y-10"
       }`}
     >
@@ -93,7 +122,7 @@ export default function ProjectsSection() {
       {/* Timeline */}
       <div className="relative">
         {/* Timeline line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-600 via-indigo-600 to-blue-600"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-emerald-600 via-teal-600 to-emerald-600"></div>
 
         {/* Projects */}
         <div className="space-y-16">
@@ -111,13 +140,13 @@ export default function ProjectsSection() {
                 <div className="flex-1">
                   <div
                     onClick={() => setSelectedProject(project)}
-                    className="p-8 border border-blue-200 dark:border-blue-800 rounded-xl hover:shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-indigo-500/20 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm transition-all duration-300 hover:scale-105 cursor-pointer group"
+                    className="p-8 border border-emerald-200 dark:border-emerald-800 rounded-xl hover:shadow-2xl hover:shadow-emerald-500/20 dark:hover:shadow-teal-500/20 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm transition-all duration-300 hover:scale-105 cursor-pointer group"
                   >
                     <div className="flex items-start gap-4 mb-4">
-                      <div className="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-lg flex-shrink-0 group-hover:animate-pulse transition-transform group-hover:scale-110 flex items-center justify-center">
+                      <div className="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-lg flex-shrink-0 group-hover:animate-pulse transition-transform group-hover:scale-110 flex items-center justify-center">
                         <Icon size={32} className="text-white" />
                       </div>
-                      <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition">
+                      <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition">
                         {project.title}
                       </h3>
                     </div>
@@ -132,7 +161,7 @@ export default function ProjectsSection() {
                         {project.stack.map((tech, j) => (
                           <span
                             key={j}
-                            className="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 text-xs font-medium rounded-full hover:bg-blue-200 dark:hover:bg-blue-800 transition"
+                            className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/50 text-emerald-700 dark:text-emerald-300 text-xs font-medium rounded-full hover:bg-emerald-200 dark:hover:bg-emerald-800 transition"
                           >
                             {tech}
                           </span>
@@ -148,7 +177,7 @@ export default function ProjectsSection() {
                             key={j}
                             className="text-slate-600 dark:text-slate-300 flex items-center gap-2"
                           >
-                            <span className="text-blue-600 dark:text-blue-400 font-bold">
+                            <span className="text-emerald-600 dark:text-emerald-400 font-bold">
                               ✓
                             </span>
                             {feature}
@@ -160,7 +189,7 @@ export default function ProjectsSection() {
                 </div>
 
                 {/* Timeline dot */}
-                <div className="flex-shrink-0 w-6 h-6 bg-blue-600 rounded-full border-4 border-white dark:border-slate-950 shadow-lg"></div>
+                <div className="flex-shrink-0 w-6 h-6 bg-emerald-600 rounded-full border-4 border-white dark:border-slate-950 shadow-lg"></div>
 
                 {/* Spacer */}
                 <div className="flex-1"></div>

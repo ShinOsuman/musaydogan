@@ -4,16 +4,37 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { Code2, Wrench, Star } from "lucide-react";
 
 const skillsGroups = [
-    {
+  {
     category: "Backend",
     icon: Code2,
-    skills: ["Java", "C#", "Spring Boot", "ASP.NET", "MySQL", "Entity Framework", "JWT Authentication", "Role-Based Access Control", "REST APIs"],
-    },
+    skills: [
+      "Java",
+      "C#",
+      "Spring Boot",
+      "ASP.NET",
+      "MySQL",
+      "Entity Framework",
+      "JWT Authentication",
+      "Role-Based Access Control",
+      "REST APIs",
+    ],
+  },
 
   {
     category: "Frontend",
     icon: Code2,
-    skills: ["React", "Vue.js", "Angular", "TypeScript", "HTML", "CSS", "Bootstrap", "Tailwind CSS", "Pinia", "REST APIs"],
+    skills: [
+      "React",
+      "Vue.js",
+      "Angular",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Tailwind CSS",
+      "Pinia",
+      "REST APIs",
+    ],
   },
   {
     category: "Tools",
@@ -23,7 +44,16 @@ const skillsGroups = [
   {
     category: "Other",
     icon: Star,
-    skills: ["Object-Oriented Design", "REST APIs", "Agile Methodologies", "Unit Testing", "Problem Solving", "Team Collaboration", "Communication", "Adaptability"],
+    skills: [
+      "Object-Oriented Design",
+      "REST APIs",
+      "Agile Methodologies",
+      "Unit Testing",
+      "Problem Solving",
+      "Team Collaboration",
+      "Communication",
+      "Adaptability",
+    ],
   },
 ];
 
@@ -33,7 +63,7 @@ export default function SkillsSection() {
     <section
       ref={ref as React.RefObject<HTMLElement>}
       id="skills"
-      className={`max-w-4xl mx-auto px-6 py-20 border-t border-blue-200 dark:border-blue-800 transition-all duration-1000 ${
+      className={`max-w-4xl mx-auto px-6 py-20 border-t border-emerald-200 dark:border-emerald-800 transition-all duration-1000 ${
         isVisible ? "opacity-100" : "opacity-0 translate-y-10"
       }`}
     >
@@ -46,15 +76,15 @@ export default function SkillsSection() {
           return (
             <div
               key={i}
-              className="p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border border-blue-200 dark:border-blue-800 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20 hover:scale-105 hover:-translate-y-2 animate-fadeIn group"
+              className="p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border border-emerald-200 dark:border-emerald-800 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-emerald-500/20 hover:scale-105 hover:-translate-y-2 animate-fadeIn group"
               style={{ animationDelay: `${i * 150}ms` }}
             >
               <div className="flex items-center gap-3 mb-4">
                 <Icon
-                  className="text-blue-600 dark:text-blue-400 group-hover:animate-spin"
+                  className="text-emerald-600 dark:text-emerald-400 group-hover:animate-spin"
                   size={28}
                 />
-                <h3 className="text-lg font-semibold text-blue-600 dark:text-blue-400">
+                <h3 className="text-lg font-semibold text-emerald-600 dark:text-emerald-400">
                   {group.category}
                 </h3>
               </div>
@@ -62,7 +92,7 @@ export default function SkillsSection() {
                 {group.skills.map((skill, j) => (
                   <li
                     key={j}
-                    className="text-slate-600 dark:text-slate-300 transition-all hover:translate-x-2 hover:text-blue-600 dark:hover:text-blue-400"
+                    className="text-slate-600 dark:text-slate-300 transition-all hover:translate-x-2 hover:text-emerald-600 dark:hover:text-emerald-400"
                   >
                     • {skill}
                   </li>
